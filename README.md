@@ -54,11 +54,6 @@ Defined via `add_shortcode()`:
 - Sanitizes and escapes all output
 - Wraps results in a responsive grid
 
-### 3. Styles
-Styles are enqueued properly using:
-```php
-wp_enqueue_style( 'rs-style', plugin_dir_url( __FILE__ ) . 'css/resources-style.css' );
-
 ## Security
 - All output is escaped using esc_html() and similar functions.
 - Prevents direct access using if ( ! defined( 'ABSPATH' ) ) exit;.
