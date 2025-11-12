@@ -58,3 +58,13 @@ Defined via `add_shortcode()`:
 Styles are enqueued properly using:
 ```php
 wp_enqueue_style( 'rs-style', plugin_dir_url( __FILE__ ) . 'css/resources-style.css' );
+
+## Security
+- All output is escaped using esc_html() and similar functions.
+- Prevents direct access using if ( ! defined( 'ABSPATH' ) ) exit;.
+
+## Author Notes
+This plugin was developed as part of a WordPress Developer assessment task to demonstrate:
+- Familiarity with CPTs, shortcodes, and WordPress hooks
+- Clean, modular, and maintainable code structure
+- Adherence to WordPress coding standards
